@@ -217,7 +217,7 @@
             // 
             this.button9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button9.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(208, 436);
+            this.button9.Location = new System.Drawing.Point(219, 458);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(198, 53);
             this.button9.TabIndex = 17;
@@ -267,20 +267,19 @@
             this.label8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label8.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(122, 415);
+            this.label8.Location = new System.Drawing.Point(121, 428);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(390, 18);
             this.label8.TabIndex = 24;
             this.label8.Text = "You haven\'t chosen the relationship yet, please try again";
             this.label8.Visible = false;
-
             // 
             // Info_Adder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(632, 493);
+            this.ClientSize = new System.Drawing.Size(632, 523);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
