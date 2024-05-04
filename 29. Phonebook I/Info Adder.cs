@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static _29.Phonebook_I.Form1;
+using System.Runtime.CompilerServices;
 
 namespace _29.Phonebook_I
 {
@@ -272,10 +273,11 @@ namespace _29.Phonebook_I
 
         private void button9_Click(object sender, EventArgs e)
         {
+            string filePath = "info.json";
             label6.Visible = false;
             label7.Visible = false;
             label8.Visible = false;
-            string filePath = "info.json";
+            label9.Visible = false;
             List<Info> currentInfoList = LoadInfo(filePath);
             if (IsValidName(NameTextBox.Text) && IsValidPhoneNumber(PhoneNumberTextBox.Text) && !IsPhoneNumberExisted(PhoneNumberTextBox.Text, filePath) && IsValidRelationship(RelationshipChoice()))
             {
@@ -318,7 +320,7 @@ namespace _29.Phonebook_I
 
                 if(IsPhoneNumberExisted(PhoneNumberTextBox.Text, filePath))
                 {
-                    label7.Visible = true;
+                    label9.Visible = true;
                     PhoneNumberTextBox.Text = "";
                 }
 
