@@ -62,7 +62,7 @@
       <DependentUpon>Info Adder.cs</DependentUpon>
     </Compile>
     <Compile Include="Profile Viewer.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Profile Viewer.Designer.cs">
       <DependentUpon>Profile Viewer.cs</DependentUpon>

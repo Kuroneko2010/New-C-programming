@@ -28,38 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.GetBackButton = new System.Windows.Forms.Button();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.PhoneNumberLabel = new System.Windows.Forms.Label();
+            this.AddressLabel = new System.Windows.Forms.Label();
+            this.RelationshipLabel = new System.Windows.Forms.Label();
+            this.EditButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.PhoneNumberStorerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // GetBackButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(20, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "<= Get back";
-            this.button1.UseVisualStyleBackColor = false;
+            this.GetBackButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.GetBackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GetBackButton.Location = new System.Drawing.Point(20, 16);
+            this.GetBackButton.Name = "GetBackButton";
+            this.GetBackButton.Size = new System.Drawing.Size(143, 60);
+            this.GetBackButton.TabIndex = 0;
+            this.GetBackButton.Text = "<= Get back";
+            this.GetBackButton.UseVisualStyleBackColor = false;
+            this.GetBackButton.Click += new System.EventHandler(this.GetBackButton_Click);
             // 
-            // label1
+            // NameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "(Username)";
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.Location = new System.Drawing.Point(97, 98);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(228, 45);
+            this.NameLabel.TabIndex = 1;
+            this.NameLabel.Text = "(Username)";
             // 
             // label2
             // 
@@ -91,74 +93,89 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Relationship:  ";
             // 
-            // label5
+            // PhoneNumberLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(294, 187);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 27);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "(0123456789)\r\n";
+            this.PhoneNumberLabel.AutoSize = true;
+            this.PhoneNumberLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumberLabel.Location = new System.Drawing.Point(275, 187);
+            this.PhoneNumberLabel.Name = "PhoneNumberLabel";
+            this.PhoneNumberLabel.Size = new System.Drawing.Size(158, 27);
+            this.PhoneNumberLabel.TabIndex = 5;
+            this.PhoneNumberLabel.Text = "(0123456789)\r\n";
             // 
-            // label6
+            // AddressLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(219, 259);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 27);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "(Hồ Chí Minh City)\r\n";
+            this.AddressLabel.AutoSize = true;
+            this.AddressLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressLabel.Location = new System.Drawing.Point(199, 259);
+            this.AddressLabel.Name = "AddressLabel";
+            this.AddressLabel.Size = new System.Drawing.Size(209, 27);
+            this.AddressLabel.TabIndex = 6;
+            this.AddressLabel.Text = "(Hồ Chí Minh City)\r\n";
             // 
-            // label7
+            // RelationshipLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(271, 331);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 27);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "(Colleague)";
+            this.RelationshipLabel.AutoSize = true;
+            this.RelationshipLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RelationshipLabel.Location = new System.Drawing.Point(250, 331);
+            this.RelationshipLabel.Name = "RelationshipLabel";
+            this.RelationshipLabel.Size = new System.Drawing.Size(137, 27);
+            this.RelationshipLabel.TabIndex = 7;
+            this.RelationshipLabel.Text = "(Colleague)";
             // 
-            // button2
+            // EditButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(104, 427);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 47);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Edit profile";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditButton.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.EditButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditButton.Location = new System.Drawing.Point(104, 383);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(201, 47);
+            this.EditButton.TabIndex = 8;
+            this.EditButton.Text = "Edit profile";
+            this.EditButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // DeleteButton
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.button3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(445, 427);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(201, 47);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Delete profile";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteButton.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DeleteButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Location = new System.Drawing.Point(442, 383);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(201, 47);
+            this.DeleteButton.TabIndex = 9;
+            this.DeleteButton.Text = "Delete profile";
+            this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // PhoneNumberStorerLabel
+            // 
+            this.PhoneNumberStorerLabel.AutoSize = true;
+            this.PhoneNumberStorerLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumberStorerLabel.Location = new System.Drawing.Point(321, 110);
+            this.PhoneNumberStorerLabel.Name = "PhoneNumberStorerLabel";
+            this.PhoneNumberStorerLabel.Size = new System.Drawing.Size(158, 27);
+            this.PhoneNumberStorerLabel.TabIndex = 10;
+            this.PhoneNumberStorerLabel.Text = "(0123456789)\r\n";
+            this.PhoneNumberStorerLabel.Visible = false;
             // 
             // Profile_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(742, 462);
+            this.Controls.Add(this.PhoneNumberStorerLabel);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.EditButton);
+            this.Controls.Add(this.RelationshipLabel);
+            this.Controls.Add(this.AddressLabel);
+            this.Controls.Add(this.PhoneNumberLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.NameLabel);
+            this.Controls.Add(this.GetBackButton);
             this.Name = "Profile_Viewer";
-            this.Size = new System.Drawing.Size(764, 518);
+            this.Load += new System.EventHandler(this.Profile_Viewer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,15 +183,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button GetBackButton;
+        private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label PhoneNumberLabel;
+        private System.Windows.Forms.Label AddressLabel;
+        private System.Windows.Forms.Label RelationshipLabel;
+        private System.Windows.Forms.Button EditButton;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Label PhoneNumberStorerLabel;
     }
 }
