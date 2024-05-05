@@ -56,10 +56,10 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLabel.Location = new System.Drawing.Point(97, 98);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(228, 45);
+            this.NameLabel.Size = new System.Drawing.Size(255, 50);
             this.NameLabel.TabIndex = 1;
             this.NameLabel.Text = "(Username)";
             // 
@@ -129,10 +129,11 @@
             this.EditButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.Location = new System.Drawing.Point(104, 383);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(201, 47);
+            this.EditButton.Size = new System.Drawing.Size(201, 53);
             this.EditButton.TabIndex = 8;
             this.EditButton.Text = "Edit profile";
             this.EditButton.UseVisualStyleBackColor = false;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // DeleteButton
             // 
@@ -140,7 +141,7 @@
             this.DeleteButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.Location = new System.Drawing.Point(442, 383);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(201, 47);
+            this.DeleteButton.Size = new System.Drawing.Size(201, 53);
             this.DeleteButton.TabIndex = 9;
             this.DeleteButton.Text = "Delete profile";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -150,7 +151,7 @@
             // 
             this.PhoneNumberStorerLabel.AutoSize = true;
             this.PhoneNumberStorerLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberStorerLabel.Location = new System.Drawing.Point(321, 110);
+            this.PhoneNumberStorerLabel.Location = new System.Drawing.Point(506, 49);
             this.PhoneNumberStorerLabel.Name = "PhoneNumberStorerLabel";
             this.PhoneNumberStorerLabel.Size = new System.Drawing.Size(158, 27);
             this.PhoneNumberStorerLabel.TabIndex = 10;

@@ -88,10 +88,5 @@ namespace _29.Phonebook_I
             flowLayoutPanel1.Controls.Clear();
             Refresh();
         }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

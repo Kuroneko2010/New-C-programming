@@ -61,6 +61,12 @@
     <Compile Include="Info Adder.Designer.cs">
       <DependentUpon>Info Adder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Editor.Designer.cs">
+      <DependentUpon>Info Editor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile Viewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Info Adder.resx">
       <DependentUpon>Info Adder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Editor.resx">
+      <DependentUpon>Info Editor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile Viewer.resx">
       <DependentUpon>Profile Viewer.cs</DependentUpon>

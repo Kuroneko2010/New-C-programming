@@ -43,20 +43,19 @@
             this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.Location = new System.Drawing.Point(10, 2);
-            this.NameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NameLabel.Location = new System.Drawing.Point(15, 3);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(151, 31);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "(Username)";
+          
             // 
             // PhoneNumberStorerLabel
             // 
             this.PhoneNumberStorerLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PhoneNumberStorerLabel.AutoSize = true;
             this.PhoneNumberStorerLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberStorerLabel.Location = new System.Drawing.Point(123, 7);
-            this.PhoneNumberStorerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PhoneNumberStorerLabel.Location = new System.Drawing.Point(184, 11);
             this.PhoneNumberStorerLabel.Name = "PhoneNumberStorerLabel";
             this.PhoneNumberStorerLabel.Size = new System.Drawing.Size(153, 23);
             this.PhoneNumberStorerLabel.TabIndex = 2;
@@ -68,10 +67,9 @@
             this.MoreButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.MoreButton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.MoreButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoreButton.Location = new System.Drawing.Point(279, -1);
-            this.MoreButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MoreButton.Location = new System.Drawing.Point(416, 0);
             this.MoreButton.Name = "MoreButton";
-            this.MoreButton.Size = new System.Drawing.Size(55, 28);
+            this.MoreButton.Size = new System.Drawing.Size(82, 43);
             this.MoreButton.TabIndex = 1;
             this.MoreButton.Text = "More";
             this.MoreButton.UseVisualStyleBackColor = false;
@@ -102,16 +100,15 @@
             // 
             // User_Interface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.PhoneNumberStorerLabel);
             this.Controls.Add(this.MoreButton);
             this.Controls.Add(this.NameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "User_Interface";
-            this.Size = new System.Drawing.Size(352, 27);
+            this.Size = new System.Drawing.Size(528, 42);
             this.Load += new System.EventHandler(this.User_Interface_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -87,6 +87,43 @@ namespace _29.Phonebook_I
             form1.DisplayInfo(filePath);
         }
 
-
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            string filePath = "info.json";
+            string phoneNumber = PhoneNumberStorerLabel.Text;
+            List<Info> information = new List<Info>();
+            if (File.Exists(filePath))
+            {
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    try
+                    {
+                        string jsonContent = reader.ReadToEnd();
+                        information = JsonConvert.DeserializeObject<List<Info>>(jsonContent);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error found: " + ex.Message);
+                    }
+                }
+            }
+            information.RemoveAll(info => info.PhoneNumber == phoneNumber);
+            try
+            {
+                var sortedInfoList = information.OrderBy(info => info.Name).ToList();
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    string jsonString = JsonConvert.SerializeObject(sortedInfoList, Formatting.Indented);
+                    writer.Write(jsonString);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error found: " + ex.Message);
+            }
+            Info_Editor editor = new Info_Editor();
+            editor.Show();
+            this.Close();
+        }
     }
 }

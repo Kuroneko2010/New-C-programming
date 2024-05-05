@@ -95,7 +95,7 @@
             this.FamilyButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FamilyButton.Location = new System.Drawing.Point(36, 311);
             this.FamilyButton.Name = "FamilyButton";
-            this.FamilyButton.Size = new System.Drawing.Size(99, 41);
+            this.FamilyButton.Size = new System.Drawing.Size(99, 54);
             this.FamilyButton.TabIndex = 7;
             this.FamilyButton.Text = "Family";
             this.FamilyButton.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             this.FriendButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FriendButton.Location = new System.Drawing.Point(190, 311);
             this.FriendButton.Name = "FriendButton";
-            this.FriendButton.Size = new System.Drawing.Size(99, 41);
+            this.FriendButton.Size = new System.Drawing.Size(99, 54);
             this.FriendButton.TabIndex = 10;
             this.FriendButton.Text = "Friend";
             this.FriendButton.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.ClassmateButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClassmateButton.Location = new System.Drawing.Point(342, 311);
             this.ClassmateButton.Name = "ClassmateButton";
-            this.ClassmateButton.Size = new System.Drawing.Size(99, 41);
+            this.ClassmateButton.Size = new System.Drawing.Size(99, 54);
             this.ClassmateButton.TabIndex = 11;
             this.ClassmateButton.Text = "Classmate";
             this.ClassmateButton.UseVisualStyleBackColor = true;
@@ -164,7 +164,7 @@
             this.CustomerButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerButton.Location = new System.Drawing.Point(496, 311);
             this.CustomerButton.Name = "CustomerButton";
-            this.CustomerButton.Size = new System.Drawing.Size(99, 41);
+            this.CustomerButton.Size = new System.Drawing.Size(99, 54);
             this.CustomerButton.TabIndex = 12;
             this.CustomerButton.Text = "Customer";
             this.CustomerButton.UseVisualStyleBackColor = true;
@@ -173,9 +173,9 @@
             // ColleagueButton
             // 
             this.ColleagueButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColleagueButton.Location = new System.Drawing.Point(36, 371);
+            this.ColleagueButton.Location = new System.Drawing.Point(35, 393);
             this.ColleagueButton.Name = "ColleagueButton";
-            this.ColleagueButton.Size = new System.Drawing.Size(99, 41);
+            this.ColleagueButton.Size = new System.Drawing.Size(99, 54);
             this.ColleagueButton.TabIndex = 13;
             this.ColleagueButton.Text = "Colleague";
             this.ColleagueButton.UseVisualStyleBackColor = true;
@@ -184,9 +184,9 @@
             // TeacherButton
             // 
             this.TeacherButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeacherButton.Location = new System.Drawing.Point(190, 371);
+            this.TeacherButton.Location = new System.Drawing.Point(190, 393);
             this.TeacherButton.Name = "TeacherButton";
-            this.TeacherButton.Size = new System.Drawing.Size(99, 41);
+            this.TeacherButton.Size = new System.Drawing.Size(99, 54);
             this.TeacherButton.TabIndex = 14;
             this.TeacherButton.Text = "Teacher";
             this.TeacherButton.UseVisualStyleBackColor = true;
@@ -195,9 +195,9 @@
             // AssistantButton
             // 
             this.AssistantButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AssistantButton.Location = new System.Drawing.Point(342, 371);
+            this.AssistantButton.Location = new System.Drawing.Point(342, 393);
             this.AssistantButton.Name = "AssistantButton";
-            this.AssistantButton.Size = new System.Drawing.Size(99, 41);
+            this.AssistantButton.Size = new System.Drawing.Size(99, 54);
             this.AssistantButton.TabIndex = 15;
             this.AssistantButton.Text = "Assistant";
             this.AssistantButton.UseVisualStyleBackColor = true;
@@ -206,9 +206,9 @@
             // OtherButton
             // 
             this.OtherButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherButton.Location = new System.Drawing.Point(496, 371);
+            this.OtherButton.Location = new System.Drawing.Point(496, 393);
             this.OtherButton.Name = "OtherButton";
-            this.OtherButton.Size = new System.Drawing.Size(99, 41);
+            this.OtherButton.Size = new System.Drawing.Size(99, 54);
             this.OtherButton.TabIndex = 16;
             this.OtherButton.Text = "Other";
             this.OtherButton.UseVisualStyleBackColor = true;
@@ -218,7 +218,7 @@
             // 
             this.button9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button9.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(219, 458);
+            this.button9.Location = new System.Drawing.Point(223, 497);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(198, 53);
             this.button9.TabIndex = 17;
@@ -268,12 +268,13 @@
             this.label8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label8.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(121, 428);
+            this.label8.Location = new System.Drawing.Point(125, 466);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(390, 18);
             this.label8.TabIndex = 24;
             this.label8.Text = "You haven\'t chosen the relationship yet, please try again";
             this.label8.Visible = false;
+ 
             // 
             // label9
             // 
@@ -293,7 +294,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(632, 523);
+            this.ClientSize = new System.Drawing.Size(632, 562);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
