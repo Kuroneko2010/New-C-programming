@@ -140,5 +140,10 @@ namespace _29.Phonebook_I
             profileViewer.Show();
             parentForm.Hide();
         }
+
+        private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

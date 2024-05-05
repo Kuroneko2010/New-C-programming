@@ -297,7 +297,7 @@ namespace _29.Phonebook_I
                 {
                     MessageBox.Show("Error found: " + ex.Message);
                 }
-                MessageBox.Show("New contact has been added");
+                MessageBox.Show("The contact has been updated");
                 Form1 form1 = new Form1();
                 form1.Show();
                 form1.RefreshForm1();

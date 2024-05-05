@@ -62,7 +62,7 @@ namespace _29.Phonebook_I
         private void button1_Click(object sender, EventArgs e)
         {
             Info_Adder newForm = new Info_Adder(this);
-            newForm.Show();
+            newForm.Show();           
         }
         public void DisplayInfo (string filePath)
         {

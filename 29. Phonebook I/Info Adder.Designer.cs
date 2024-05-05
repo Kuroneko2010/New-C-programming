@@ -50,6 +50,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.GetBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -274,7 +275,6 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "You haven\'t chosen the relationship yet, please try again";
             this.label8.Visible = false;
- 
             // 
             // label9
             // 
@@ -289,12 +289,25 @@
             this.label9.Text = "The phone number has existed, please try again";
             this.label9.Visible = false;
             // 
+            // GetBackButton
+            // 
+            this.GetBackButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.GetBackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GetBackButton.Location = new System.Drawing.Point(11, 12);
+            this.GetBackButton.Name = "GetBackButton";
+            this.GetBackButton.Size = new System.Drawing.Size(143, 40);
+            this.GetBackButton.TabIndex = 42;
+            this.GetBackButton.Text = "<= Get back";
+            this.GetBackButton.UseVisualStyleBackColor = false;
+            this.GetBackButton.Click += new System.EventHandler(this.GetBackButton_Click);
+            // 
             // Info_Adder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(632, 562);
+            this.Controls.Add(this.GetBackButton);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -348,5 +361,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button GetBackButton;
     }
 }

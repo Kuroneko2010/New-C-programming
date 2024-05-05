@@ -48,7 +48,7 @@
             this.NameLabel.Size = new System.Drawing.Size(151, 31);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "(Username)";
-          
+            this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
             // 
             // PhoneNumberStorerLabel
             // 

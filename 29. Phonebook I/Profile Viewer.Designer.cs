@@ -47,7 +47,7 @@
             this.GetBackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GetBackButton.Location = new System.Drawing.Point(20, 16);
             this.GetBackButton.Name = "GetBackButton";
-            this.GetBackButton.Size = new System.Drawing.Size(143, 60);
+            this.GetBackButton.Size = new System.Drawing.Size(143, 38);
             this.GetBackButton.TabIndex = 0;
             this.GetBackButton.Text = "<= Get back";
             this.GetBackButton.UseVisualStyleBackColor = false;

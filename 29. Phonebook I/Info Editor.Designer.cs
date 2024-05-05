@@ -55,7 +55,7 @@
             // 
             this.InfoEditorLabel.AutoSize = true;
             this.InfoEditorLabel.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoEditorLabel.Location = new System.Drawing.Point(211, 26);
+            this.InfoEditorLabel.Location = new System.Drawing.Point(211, 18);
             this.InfoEditorLabel.Name = "InfoEditorLabel";
             this.InfoEditorLabel.Size = new System.Drawing.Size(238, 36);
             this.InfoEditorLabel.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             this.NameSignLabel.AutoSize = true;
             this.NameSignLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameSignLabel.Location = new System.Drawing.Point(43, 77);
+            this.NameSignLabel.Location = new System.Drawing.Point(43, 55);
             this.NameSignLabel.Name = "NameSignLabel";
             this.NameSignLabel.Size = new System.Drawing.Size(67, 23);
             this.NameSignLabel.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(47, 103);
+            this.NameTextBox.Location = new System.Drawing.Point(47, 81);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(559, 29);
             this.NameTextBox.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.NameErrorLabel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.NameErrorLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.NameErrorLabel.Location = new System.Drawing.Point(44, 135);
+            this.NameErrorLabel.Location = new System.Drawing.Point(44, 113);
             this.NameErrorLabel.Name = "NameErrorLabel";
             this.NameErrorLabel.Size = new System.Drawing.Size(374, 18);
             this.NameErrorLabel.TabIndex = 23;
@@ -96,7 +96,7 @@
             // 
             this.PhoneNumberSignLabel.AutoSize = true;
             this.PhoneNumberSignLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberSignLabel.Location = new System.Drawing.Point(43, 165);
+            this.PhoneNumberSignLabel.Location = new System.Drawing.Point(43, 145);
             this.PhoneNumberSignLabel.Name = "PhoneNumberSignLabel";
             this.PhoneNumberSignLabel.Size = new System.Drawing.Size(145, 23);
             this.PhoneNumberSignLabel.TabIndex = 24;
@@ -104,7 +104,7 @@
             // 
             // PhoneNumberTextBox
             // 
-            this.PhoneNumberTextBox.Location = new System.Drawing.Point(47, 191);
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(47, 171);
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
             this.PhoneNumberTextBox.Size = new System.Drawing.Size(559, 29);
             this.PhoneNumberTextBox.TabIndex = 25;
@@ -116,7 +116,7 @@
             this.PhoneNumberErrorLabel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.PhoneNumberErrorLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNumberErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.PhoneNumberErrorLabel.Location = new System.Drawing.Point(44, 223);
+            this.PhoneNumberErrorLabel.Location = new System.Drawing.Point(44, 205);
             this.PhoneNumberErrorLabel.Name = "PhoneNumberErrorLabel";
             this.PhoneNumberErrorLabel.Size = new System.Drawing.Size(338, 18);
             this.PhoneNumberErrorLabel.TabIndex = 26;
@@ -127,7 +127,7 @@
             // 
             this.AddressSignLabel.AutoSize = true;
             this.AddressSignLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressSignLabel.Location = new System.Drawing.Point(43, 257);
+            this.AddressSignLabel.Location = new System.Drawing.Point(43, 240);
             this.AddressSignLabel.Name = "AddressSignLabel";
             this.AddressSignLabel.Size = new System.Drawing.Size(89, 23);
             this.AddressSignLabel.TabIndex = 27;
@@ -135,7 +135,7 @@
             // 
             // AddressTextBox
             // 
-            this.AddressTextBox.Location = new System.Drawing.Point(47, 283);
+            this.AddressTextBox.Location = new System.Drawing.Point(47, 266);
             this.AddressTextBox.Name = "AddressTextBox";
             this.AddressTextBox.Size = new System.Drawing.Size(559, 29);
             this.AddressTextBox.TabIndex = 28;
@@ -145,7 +145,7 @@
             // 
             this.RelationshipSignLabel.AutoSize = true;
             this.RelationshipSignLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RelationshipSignLabel.Location = new System.Drawing.Point(43, 339);
+            this.RelationshipSignLabel.Location = new System.Drawing.Point(43, 322);
             this.RelationshipSignLabel.Name = "RelationshipSignLabel";
             this.RelationshipSignLabel.Size = new System.Drawing.Size(122, 23);
             this.RelationshipSignLabel.TabIndex = 29;
@@ -154,7 +154,7 @@
             // FamilyButton
             // 
             this.FamilyButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FamilyButton.Location = new System.Drawing.Point(47, 365);
+            this.FamilyButton.Location = new System.Drawing.Point(47, 348);
             this.FamilyButton.Name = "FamilyButton";
             this.FamilyButton.Size = new System.Drawing.Size(99, 54);
             this.FamilyButton.TabIndex = 30;
@@ -165,7 +165,7 @@
             // FriendButton
             // 
             this.FriendButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FriendButton.Location = new System.Drawing.Point(200, 365);
+            this.FriendButton.Location = new System.Drawing.Point(200, 348);
             this.FriendButton.Name = "FriendButton";
             this.FriendButton.Size = new System.Drawing.Size(99, 54);
             this.FriendButton.TabIndex = 31;
@@ -176,7 +176,7 @@
             // ClassmateButton
             // 
             this.ClassmateButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassmateButton.Location = new System.Drawing.Point(350, 365);
+            this.ClassmateButton.Location = new System.Drawing.Point(350, 348);
             this.ClassmateButton.Name = "ClassmateButton";
             this.ClassmateButton.Size = new System.Drawing.Size(99, 54);
             this.ClassmateButton.TabIndex = 32;
@@ -187,7 +187,7 @@
             // CustomerButton
             // 
             this.CustomerButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerButton.Location = new System.Drawing.Point(507, 365);
+            this.CustomerButton.Location = new System.Drawing.Point(507, 348);
             this.CustomerButton.Name = "CustomerButton";
             this.CustomerButton.Size = new System.Drawing.Size(99, 54);
             this.CustomerButton.TabIndex = 33;
@@ -198,7 +198,7 @@
             // ColleagueButton
             // 
             this.ColleagueButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColleagueButton.Location = new System.Drawing.Point(47, 451);
+            this.ColleagueButton.Location = new System.Drawing.Point(47, 426);
             this.ColleagueButton.Name = "ColleagueButton";
             this.ColleagueButton.Size = new System.Drawing.Size(99, 54);
             this.ColleagueButton.TabIndex = 34;
@@ -209,7 +209,7 @@
             // TeacherButton
             // 
             this.TeacherButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeacherButton.Location = new System.Drawing.Point(200, 451);
+            this.TeacherButton.Location = new System.Drawing.Point(200, 426);
             this.TeacherButton.Name = "TeacherButton";
             this.TeacherButton.Size = new System.Drawing.Size(99, 54);
             this.TeacherButton.TabIndex = 35;
@@ -220,7 +220,7 @@
             // AssistantButton
             // 
             this.AssistantButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AssistantButton.Location = new System.Drawing.Point(350, 451);
+            this.AssistantButton.Location = new System.Drawing.Point(350, 426);
             this.AssistantButton.Name = "AssistantButton";
             this.AssistantButton.Size = new System.Drawing.Size(99, 54);
             this.AssistantButton.TabIndex = 36;
@@ -231,7 +231,7 @@
             // OtherButton
             // 
             this.OtherButton.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OtherButton.Location = new System.Drawing.Point(507, 451);
+            this.OtherButton.Location = new System.Drawing.Point(507, 426);
             this.OtherButton.Name = "OtherButton";
             this.OtherButton.Size = new System.Drawing.Size(99, 54);
             this.OtherButton.TabIndex = 37;
@@ -243,7 +243,7 @@
             // 
             this.EditButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.EditButton.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.Location = new System.Drawing.Point(232, 561);
+            this.EditButton.Location = new System.Drawing.Point(233, 522);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(198, 53);
             this.EditButton.TabIndex = 38;
@@ -257,7 +257,7 @@
             this.RelationshipErrorLabel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.RelationshipErrorLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RelationshipErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.RelationshipErrorLabel.Location = new System.Drawing.Point(137, 523);
+            this.RelationshipErrorLabel.Location = new System.Drawing.Point(138, 492);
             this.RelationshipErrorLabel.Name = "RelationshipErrorLabel";
             this.RelationshipErrorLabel.Size = new System.Drawing.Size(390, 18);
             this.RelationshipErrorLabel.TabIndex = 39;
@@ -270,7 +270,7 @@
             this.PhoneNumberInvalidError.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.PhoneNumberInvalidError.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNumberInvalidError.ForeColor = System.Drawing.Color.Red;
-            this.PhoneNumberInvalidError.Location = new System.Drawing.Point(44, 223);
+            this.PhoneNumberInvalidError.Location = new System.Drawing.Point(44, 205);
             this.PhoneNumberInvalidError.Name = "PhoneNumberInvalidError";
             this.PhoneNumberInvalidError.Size = new System.Drawing.Size(271, 18);
             this.PhoneNumberInvalidError.TabIndex = 40;
@@ -282,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(658, 622);
+            this.ClientSize = new System.Drawing.Size(658, 594);
             this.Controls.Add(this.PhoneNumberInvalidError);
             this.Controls.Add(this.RelationshipErrorLabel);
             this.Controls.Add(this.EditButton);

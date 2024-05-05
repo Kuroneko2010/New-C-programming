@@ -330,6 +330,11 @@ namespace _29.Phonebook_I
                 }
             }
         }
+
+        private void GetBackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     public class Info
     {
