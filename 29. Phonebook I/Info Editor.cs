@@ -20,14 +20,14 @@ namespace _29.Phonebook_I
         public static List<string> phoneNumbersHistory = new List<string>();   
         public Info_Editor()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
+
 
         private void Info_Editor_Load(object sender, EventArgs e)
         {
 
         }
-
         public bool IsValidName(string name)
         {
             if (string.IsNullOrEmpty(name))
@@ -330,6 +330,7 @@ namespace _29.Phonebook_I
                 }
             }
         }
+        
         public class Info
         {
             public string Name { get; set; }

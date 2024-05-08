@@ -98,9 +98,9 @@
             this.PhoneNumberSignLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNumberSignLabel.Location = new System.Drawing.Point(43, 145);
             this.PhoneNumberSignLabel.Name = "PhoneNumberSignLabel";
-            this.PhoneNumberSignLabel.Size = new System.Drawing.Size(145, 23);
+            this.PhoneNumberSignLabel.Size = new System.Drawing.Size(142, 23);
             this.PhoneNumberSignLabel.TabIndex = 24;
-            this.PhoneNumberSignLabel.Text = "Phone Number:";
+            this.PhoneNumberSignLabel.Text = "Phone number:";
             // 
             // PhoneNumberTextBox
             // 

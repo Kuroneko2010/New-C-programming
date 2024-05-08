@@ -87,6 +87,31 @@ namespace _29.Phonebook_I
             form1.DisplayInfo(filePath);
         }
 
+        public List<Info> LoadInfo(string filePath)
+        {
+            List<Info> information = new List<Info>();
+            if (File.Exists(filePath))
+            {
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    try
+                    {
+                        string jsonContent = reader.ReadToEnd();
+                        information = JsonConvert.DeserializeObject<List<Info>>(jsonContent);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error found:" + ex.Message);
+                    }
+                }
+            }
+            List<Info> sortedInfoList = new List<Info>(information);
+            if (information != null)
+            {
+                sortedInfoList = information.OrderBy(info => info.Name).ToList();
+            }
+            return sortedInfoList;
+        }
         private void EditButton_Click(object sender, EventArgs e)
         {
             string filePath = "info.json";
@@ -120,7 +145,7 @@ namespace _29.Phonebook_I
             catch (Exception ex)
             {
                 MessageBox.Show("Error found: " + ex.Message);
-            }
+            }       
             Info_Editor editor = new Info_Editor();
             editor.Show();
             this.Close();
