@@ -88,6 +88,23 @@ namespace _29.Phonebook_I
             flowLayoutPanel1.Controls.Clear();
             Refresh();
         }
+
+        public void SaveAddressBook(List<Info> information, string filePath)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    string jsonString = JsonConvert.SerializeObject(information, Formatting.Indented);
+                    writer.Write(jsonString);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error found: " + ex.Message);
+            }
+        }
         public void BackUpAddressBook(List<Info> information, string backUpFilePath)
         {
             try
@@ -132,11 +149,13 @@ namespace _29.Phonebook_I
         }
         private void RecoverButton_Click(object sender, EventArgs e)
         {
+            string filePath = "info.json";
             string backUpFilePath = "backupinfo.json";
             List<Info> restoredInformation = RestoreAddressBook(backUpFilePath);
             RefreshForm1();
             DisplayInfo(backUpFilePath);
-            MessageBox.Show("We have recovered your contact from the file successfully");
+            SaveAddressBook(restoredInformation, filePath);
+            MessageBox.Show("The contact has been recovered successfully");
         }
     }
 }
