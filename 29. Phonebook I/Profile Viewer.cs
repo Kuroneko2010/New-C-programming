@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using static _29.Phonebook_I.User_Interface;
 
 namespace _29.Phonebook_I
 {
@@ -145,10 +147,9 @@ namespace _29.Phonebook_I
             catch (Exception ex)
             {
                 MessageBox.Show("Error found: " + ex.Message);
-            }       
+            }
             Info_Editor editor = new Info_Editor();
-            editor.Show();
-            this.Close();
+            editor.Show();                      
         }
     }
 }

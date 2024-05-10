@@ -305,6 +305,7 @@
             this.Controls.Add(this.NameSignLabel);
             this.Controls.Add(this.InfoEditorLabel);
             this.Name = "Info_Editor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Info_Editor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

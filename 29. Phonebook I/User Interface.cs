@@ -29,6 +29,7 @@ namespace _29.Phonebook_I
             parentForm = parent;
             NameLabel.Text = profile.Name;
             PhoneNumberStorerLabel.Text = profile.PhoneNumber;
+            PhoneNumberLabel.Text = profile.PhoneNumber;
         }
 
 
@@ -142,6 +143,11 @@ namespace _29.Phonebook_I
         }
 
         private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PhoneNumberStorerLabel_Click(object sender, EventArgs e)
         {
 
         }

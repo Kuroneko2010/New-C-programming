@@ -11,16 +11,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using static _29.Phonebook_I.Form1;
+
 
 namespace _29.Phonebook_I
 {
     public partial class Info_Editor : Form
     {
+        public class Info
+        {
+            public string Name { get; set; }
+            public string PhoneNumber { get; set; }
+            public string Address { get; set; }
+            public string Relationship { get; set; }
+            public Info(string name, string phoneNumber, string address, string relationship)
+            {
+                Name = name;
+                PhoneNumber = phoneNumber;
+                Address = address;
+                Relationship = relationship;
+            }
+        }
+
         public static List<string> phoneNumbersHistory = new List<string>();   
         public Info_Editor()
         {
-            InitializeComponent();
+            InitializeComponent();        
         }
 
 
@@ -303,6 +318,7 @@ namespace _29.Phonebook_I
                 form1.RefreshForm1();
                 form1.DisplayInfo(filePath);
                 this.Close();
+                
             }
             else
             {
@@ -328,21 +344,6 @@ namespace _29.Phonebook_I
                 {
                     RelationshipErrorLabel.Visible = true;
                 }
-            }
-        }
-        
-        public class Info
-        {
-            public string Name { get; set; }
-            public string PhoneNumber { get; set; }
-            public string Address { get; set; }
-            public string Relationship { get; set; }
-            public Info(string name, string phoneNumber, string address, string relationship)
-            {
-                Name = name;
-                PhoneNumber = phoneNumber;
-                Address = address;
-                Relationship = relationship;
             }
         }
     }

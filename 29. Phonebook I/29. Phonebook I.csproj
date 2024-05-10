@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="User Interface.resx">
       <DependentUpon>User Interface.cs</DependentUpon>
@@ -118,6 +119,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5427114755592_b988563eae7f6823f53600b93e71fb9b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5427140306514_d3620e70880715a244df01848bce1dd4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5428675502272_9545a0cc2de326b68dced9a71e8cba82.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

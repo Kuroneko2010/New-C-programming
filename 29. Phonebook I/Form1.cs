@@ -77,7 +77,7 @@ namespace _29.Phonebook_I
                     Address = info.Address,
                     Relationship = info.Relationship
                 },this);
-                userControl.Size = new Size(528, 41);
+                userControl.Size = new Size(514, 41);
                 userControl.Location = new Point(0, i * userControl.Height);
                 flowLayoutPanel1.Controls.Add(userControl);
                 i++;
@@ -87,6 +87,56 @@ namespace _29.Phonebook_I
         {
             flowLayoutPanel1.Controls.Clear();
             Refresh();
+        }
+        public void BackUpAddressBook(List<Info> information, string backUpFilePath)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(backUpFilePath))
+                {
+                    string jsonString = JsonConvert.SerializeObject(information, Formatting.Indented);
+                    writer.Write(jsonString);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error found: " + ex.Message);
+            }
+        }
+        public List<Info> RestoreAddressBook(string backUpFilePath)
+        {
+            List<Info> restoredInformation = new List<Info>();
+            try
+            {
+                using (StreamReader reader = new StreamReader(backUpFilePath))
+                {
+                    string jsonContent = reader.ReadToEnd();
+                    restoredInformation = JsonConvert.DeserializeObject<List<Info>>(jsonContent);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error found: " + ex.Message);
+            }
+            return restoredInformation;
+        }
+        private void BackUpButton_Click(object sender, EventArgs e)
+        {
+            string filePath = "info.json";
+            string backUpFilePath = "backupinfo.json";                  
+            Form1 form1 = new Form1();
+            List<Info> information = form1.LoadInfo(filePath);
+            form1.BackUpAddressBook(information, backUpFilePath);
+            MessageBox.Show("The contact has been backed up to another file");
+        }
+        private void RecoverButton_Click(object sender, EventArgs e)
+        {
+            string backUpFilePath = "backupinfo.json";
+            List<Info> restoredInformation = RestoreAddressBook(backUpFilePath);
+            RefreshForm1();
+            DisplayInfo(backUpFilePath);
+            MessageBox.Show("We have recovered your contact from the file successfully");
         }
     }
 }
