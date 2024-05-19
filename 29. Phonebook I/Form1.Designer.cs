@@ -32,8 +32,8 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.RecoverButton = new System.Windows.Forms.Button();
             this.BackUpButton = new System.Windows.Forms.Button();
+            this.RecoverButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(12, 11);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
@@ -80,18 +80,6 @@
             this.panel1.Size = new System.Drawing.Size(514, 51);
             this.panel1.TabIndex = 0;
             // 
-            // RecoverButton
-            // 
-            this.RecoverButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RecoverButton.Location = new System.Drawing.Point(437, 11);
-            this.RecoverButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RecoverButton.Name = "RecoverButton";
-            this.RecoverButton.Size = new System.Drawing.Size(69, 33);
-            this.RecoverButton.TabIndex = 2;
-            this.RecoverButton.Text = "Recover";
-            this.RecoverButton.UseVisualStyleBackColor = true;
-            this.RecoverButton.Click += new System.EventHandler(this.RecoverButton_Click);
-            // 
             // BackUpButton
             // 
             this.BackUpButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,6 +91,18 @@
             this.BackUpButton.Text = "Back Up";
             this.BackUpButton.UseVisualStyleBackColor = true;
             this.BackUpButton.Click += new System.EventHandler(this.BackUpButton_Click);
+            // 
+            // RecoverButton
+            // 
+            this.RecoverButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RecoverButton.Location = new System.Drawing.Point(437, 11);
+            this.RecoverButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RecoverButton.Name = "RecoverButton";
+            this.RecoverButton.Size = new System.Drawing.Size(69, 33);
+            this.RecoverButton.TabIndex = 2;
+            this.RecoverButton.Text = "Recover";
+            this.RecoverButton.UseVisualStyleBackColor = true;
+            this.RecoverButton.Click += new System.EventHandler(this.RecoverButton_Click);
             // 
             // Form1
             // 

@@ -88,74 +88,41 @@ namespace _29.Phonebook_I
             flowLayoutPanel1.Controls.Clear();
             Refresh();
         }
-
-        public void SaveAddressBook(List<Info> information, string filePath)
-        {
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    string jsonString = JsonConvert.SerializeObject(information, Formatting.Indented);
-                    writer.Write(jsonString);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error found: " + ex.Message);
-            }
-        }
-        public void BackUpAddressBook(List<Info> information, string backUpFilePath)
-        {
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(backUpFilePath))
-                {
-                    string jsonString = JsonConvert.SerializeObject(information, Formatting.Indented);
-                    writer.Write(jsonString);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error found: " + ex.Message);
-            }
-        }
-        public List<Info> RestoreAddressBook(string backUpFilePath)
-        {
-            List<Info> restoredInformation = new List<Info>();
-            try
-            {
-                using (StreamReader reader = new StreamReader(backUpFilePath))
-                {
-                    string jsonContent = reader.ReadToEnd();
-                    restoredInformation = JsonConvert.DeserializeObject<List<Info>>(jsonContent);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error found: " + ex.Message);
-            }
-            return restoredInformation;
-        }
         private void BackUpButton_Click(object sender, EventArgs e)
         {
             string filePath = "info.json";
-            string backUpFilePath = "backupinfo.json";                  
-            Form1 form1 = new Form1();
-            List<Info> information = form1.LoadInfo(filePath);
-            form1.BackUpAddressBook(information, backUpFilePath);
-            MessageBox.Show("The contact has been backed up to another file");
+            try
+            {
+                if(!File.Exists(filePath))
+                {
+                    MessageBox.Show("File info.json does not exist, please try again");
+                    return;
+                }
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Title = "Chọn vị trí và tên cho file backup";
+                saveFileDialog.Filter = "JSON files (*.json)|*.json";
+                saveFileDialog.FileName = "backup.json";
+                DialogResult dialogResult = saveFileDialog.ShowDialog();
+                if (dialogResult == DialogResult.OK && !string.IsNullOrEmpty(saveFileDialog.FileName))
+                {
+                    File.Copy(filePath, saveFileDialog.FileName, true);
+                    MessageBox.Show("File has been backed up successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Backup has been cancelled or file selected was invalid");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error found: " + ex.Message);
+            }
         }
         private void RecoverButton_Click(object sender, EventArgs e)
         {
-            string filePath = "info.json";
-            string backUpFilePath = "backupinfo.json";
-            List<Info> restoredInformation = RestoreAddressBook(backUpFilePath);
-            RefreshForm1();
-            DisplayInfo(backUpFilePath);
-            SaveAddressBook(restoredInformation, filePath);
-            MessageBox.Show("The contact has been recovered successfully");
+            File_Recoverer recoverer = new File_Recoverer(this);
+            recoverer.Show();
         }
     }
 }

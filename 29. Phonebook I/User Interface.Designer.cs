@@ -49,7 +49,6 @@
             this.NameLabel.Size = new System.Drawing.Size(151, 31);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "(Username)";
-            this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
             // 
             // PhoneNumberStorerLabel
             // 
@@ -62,7 +61,6 @@
             this.PhoneNumberStorerLabel.TabIndex = 2;
             this.PhoneNumberStorerLabel.Text = "(Phone Number)";
             this.PhoneNumberStorerLabel.Visible = false;
-            this.PhoneNumberStorerLabel.Click += new System.EventHandler(this.PhoneNumberStorerLabel_Click);
             // 
             // MoreButton
             // 
@@ -105,7 +103,7 @@
             this.PhoneNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PhoneNumberLabel.AutoSize = true;
             this.PhoneNumberLabel.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberLabel.Location = new System.Drawing.Point(191, 3);
+            this.PhoneNumberLabel.Location = new System.Drawing.Point(396, 3);
             this.PhoneNumberLabel.Name = "PhoneNumberLabel";
             this.PhoneNumberLabel.Size = new System.Drawing.Size(205, 31);
             this.PhoneNumberLabel.TabIndex = 3;
