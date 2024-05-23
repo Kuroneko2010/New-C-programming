@@ -33,7 +33,6 @@
             this.URLTextBox = new System.Windows.Forms.RichTextBox();
             this.RecoverButton = new System.Windows.Forms.Button();
             this.InvalidErrorLabel = new System.Windows.Forms.Label();
-            this.NullFileErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // UrlLabel
@@ -83,25 +82,12 @@
             this.InvalidErrorLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.InvalidErrorLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InvalidErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.InvalidErrorLabel.Location = new System.Drawing.Point(97, 160);
+            this.InvalidErrorLabel.Location = new System.Drawing.Point(75, 160);
             this.InvalidErrorLabel.Name = "InvalidErrorLabel";
-            this.InvalidErrorLabel.Size = new System.Drawing.Size(260, 18);
+            this.InvalidErrorLabel.Size = new System.Drawing.Size(313, 18);
             this.InvalidErrorLabel.TabIndex = 25;
-            this.InvalidErrorLabel.Text = "INVALID FILE, PLEASE TRY AGAIN";
+            this.InvalidErrorLabel.Text = "YOU MUST CHOOSE A VALID FILE FIRST!";
             this.InvalidErrorLabel.Visible = false;
-            // 
-            // NullFileErrorLabel
-            // 
-            this.NullFileErrorLabel.AutoSize = true;
-            this.NullFileErrorLabel.BackColor = System.Drawing.Color.Gainsboro;
-            this.NullFileErrorLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NullFileErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.NullFileErrorLabel.Location = new System.Drawing.Point(97, 160);
-            this.NullFileErrorLabel.Name = "NullFileErrorLabel";
-            this.NullFileErrorLabel.Size = new System.Drawing.Size(259, 18);
-            this.NullFileErrorLabel.TabIndex = 26;
-            this.NullFileErrorLabel.Text = "YOU MUST CHOOSE A FILE FIRST";
-            this.NullFileErrorLabel.Visible = false;
             // 
             // File_Recoverer
             // 
@@ -109,7 +95,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(461, 266);
-            this.Controls.Add(this.NullFileErrorLabel);
             this.Controls.Add(this.InvalidErrorLabel);
             this.Controls.Add(this.RecoverButton);
             this.Controls.Add(this.URLTextBox);
@@ -130,6 +115,5 @@
         private System.Windows.Forms.RichTextBox URLTextBox;
         private System.Windows.Forms.Button RecoverButton;
         private System.Windows.Forms.Label InvalidErrorLabel;
-        private System.Windows.Forms.Label NullFileErrorLabel;
     }
 }

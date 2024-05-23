@@ -89,11 +89,11 @@ namespace _29.Phonebook_I
             Refresh();
         }
         private void BackUpButton_Click(object sender, EventArgs e)
-        {
+        {  
             string filePath = "info.json";
             try
             {
-                if(!File.Exists(filePath))
+                if (!File.Exists(filePath))
                 {
                     MessageBox.Show("File info.json does not exist, please try again");
                     return;
@@ -101,7 +101,7 @@ namespace _29.Phonebook_I
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Title = "Chọn vị trí và tên cho file backup";
                 saveFileDialog.Filter = "JSON files (*.json)|*.json";
-                saveFileDialog.FileName = "backup.json";
+                saveFileDialog.FileName = "backup.json";                           
                 DialogResult dialogResult = saveFileDialog.ShowDialog();
                 if (dialogResult == DialogResult.OK && !string.IsNullOrEmpty(saveFileDialog.FileName))
                 {
@@ -112,12 +112,11 @@ namespace _29.Phonebook_I
                 {
                     MessageBox.Show("Backup has been cancelled or file selected was invalid");
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error found: " + ex.Message);
-            }
+            }            
         }
         private void RecoverButton_Click(object sender, EventArgs e)
         {

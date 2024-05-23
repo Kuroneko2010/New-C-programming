@@ -41,7 +41,8 @@ namespace _29.Phonebook_I
 
         private void Info_Editor_Load(object sender, EventArgs e)
         {
-
+            RelationshipTextBox.AppendText("User's relationship here");
+            RelationshipTextBox.Visible = false;
         }
         public bool IsValidName(string name)
         {
@@ -134,6 +135,7 @@ namespace _29.Phonebook_I
 
         private void FamilyButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = Color.CornflowerBlue;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -147,6 +149,7 @@ namespace _29.Phonebook_I
 
         private void FriendButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = Color.CornflowerBlue;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -160,6 +163,7 @@ namespace _29.Phonebook_I
 
         private void ClassmateButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = Color.CornflowerBlue;
@@ -173,6 +177,7 @@ namespace _29.Phonebook_I
 
         private void CustomerButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -186,6 +191,7 @@ namespace _29.Phonebook_I
 
         private void ColleagueButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -199,6 +205,7 @@ namespace _29.Phonebook_I
 
         private void TeacherButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -212,6 +219,7 @@ namespace _29.Phonebook_I
 
         private void AssistantButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = false;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -225,6 +233,7 @@ namespace _29.Phonebook_I
 
         private void OtherButton_Click(object sender, EventArgs e)
         {
+            RelationshipTextBox.Visible = true;
             FamilyButton.BackColor = DefaultBackColor;
             FriendButton.BackColor = DefaultBackColor;
             ClassmateButton.BackColor = DefaultBackColor;
@@ -270,7 +279,7 @@ namespace _29.Phonebook_I
             }
             if (otherBlue)
             {
-                return "Other";
+                return RelationshipTextBox.Text;
             }
             return "Not chosen";
         }
@@ -291,6 +300,11 @@ namespace _29.Phonebook_I
             PhoneNumberErrorLabel.Visible = false;
             PhoneNumberInvalidError.Visible = false;
             RelationshipErrorLabel.Visible = false;
+            if (string.IsNullOrEmpty(RelationshipTextBox.Text))
+            {
+                RelationshipTextBox.AppendText("Please choose a relationship");
+                RelationshipTextBox.ForeColor = Color.Red;
+            }
             List<Info> currentInfoList = LoadInfo(filePath);
             if (IsValidName(NameTextBox.Text) && IsValidPhoneNumber(PhoneNumberTextBox.Text) && !IsPhoneNumberExisted(PhoneNumberTextBox.Text, filePath) && IsValidRelationship(RelationshipChoice()))
             {
@@ -344,6 +358,20 @@ namespace _29.Phonebook_I
                 {
                     RelationshipErrorLabel.Visible = true;
                 }
+            }
+        }
+
+        private void RelationshipTextBox_Click(object sender, EventArgs e)
+        {
+            if (RelationshipTextBox.Text.LastIndexOf("User's relationship here") != -1)
+            {
+                RelationshipTextBox.Text = RelationshipTextBox.Text.Remove(RelationshipTextBox.Text.LastIndexOf("User's relationship here"));
+                RelationshipTextBox.ForeColor = Color.Black;
+            }
+            if (RelationshipTextBox.Text.LastIndexOf("Please choose a relationship") != -1)
+            {
+                RelationshipTextBox.Text = RelationshipTextBox.Text.Remove(RelationshipTextBox.Text.LastIndexOf("Please choose a relationship"));
+                RelationshipTextBox.ForeColor = Color.Black;
             }
         }
     }

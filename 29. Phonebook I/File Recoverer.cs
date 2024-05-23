@@ -19,8 +19,7 @@ namespace _29.Phonebook_I
         {
             InitializeComponent();
             parentForm = parent;
-            InvalidErrorLabel.Visible = false;
-            NullFileErrorLabel.Visible = false;
+            InvalidErrorLabel.Visible = false;            
         }
         private void File_Recoverer_Load(object sender, EventArgs e)
         {
@@ -29,7 +28,6 @@ namespace _29.Phonebook_I
         private void RecoverButton_Click(object sender, EventArgs e)
         {
             InvalidErrorLabel.Visible = false;
-            NullFileErrorLabel.Visible = false;
             string filePath = URLTextBox.Text;
             if (File.Exists(filePath))
             {
@@ -73,7 +71,7 @@ namespace _29.Phonebook_I
             }
             else
             {
-                NullFileErrorLabel.Visible = true;
+                InvalidErrorLabel.Visible = true;
                 URLTextBox.Text = "";
             }
         }

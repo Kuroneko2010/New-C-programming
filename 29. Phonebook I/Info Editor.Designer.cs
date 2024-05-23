@@ -49,6 +49,7 @@
             this.EditButton = new System.Windows.Forms.Button();
             this.RelationshipErrorLabel = new System.Windows.Forms.Label();
             this.PhoneNumberInvalidError = new System.Windows.Forms.Label();
+            this.RelationshipTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // InfoEditorLabel
@@ -277,12 +278,22 @@
             this.PhoneNumberInvalidError.Text = "Invalid phone number, please try again";
             this.PhoneNumberInvalidError.Visible = false;
             // 
+            // RelationshipTextBox
+            // 
+            this.RelationshipTextBox.Location = new System.Drawing.Point(47, 487);
+            this.RelationshipTextBox.Name = "RelationshipTextBox";
+            this.RelationshipTextBox.Size = new System.Drawing.Size(285, 29);
+            this.RelationshipTextBox.TabIndex = 44;
+            this.RelationshipTextBox.Text = "";
+            this.RelationshipTextBox.Click += new System.EventHandler(this.RelationshipTextBox_Click);
+            // 
             // Info_Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(658, 594);
+            this.Controls.Add(this.RelationshipTextBox);
             this.Controls.Add(this.PhoneNumberInvalidError);
             this.Controls.Add(this.RelationshipErrorLabel);
             this.Controls.Add(this.EditButton);
@@ -335,5 +346,6 @@
         private System.Windows.Forms.Button EditButton;
         private System.Windows.Forms.Label RelationshipErrorLabel;
         private System.Windows.Forms.Label PhoneNumberInvalidError;
+        private System.Windows.Forms.RichTextBox RelationshipTextBox;
     }
 }

@@ -51,6 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.GetBackButton = new System.Windows.Forms.Button();
+            this.RelationshipTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -301,12 +302,24 @@
             this.GetBackButton.UseVisualStyleBackColor = false;
             this.GetBackButton.Click += new System.EventHandler(this.GetBackButton_Click);
             // 
+            // RelationshipTextBox
+            // 
+            this.RelationshipTextBox.Location = new System.Drawing.Point(36, 455);
+            this.RelationshipTextBox.Name = "RelationshipTextBox";
+            this.RelationshipTextBox.Size = new System.Drawing.Size(285, 29);
+            this.RelationshipTextBox.TabIndex = 43;
+            this.RelationshipTextBox.Text = "";
+            this.RelationshipTextBox.Click += new System.EventHandler(this.RelationshipTextBox_Click);
+    
+
+            // 
             // Info_Adder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(632, 562);
+            this.Controls.Add(this.RelationshipTextBox);
             this.Controls.Add(this.GetBackButton);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -362,5 +375,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button GetBackButton;
+        private System.Windows.Forms.RichTextBox RelationshipTextBox;
     }
 }
