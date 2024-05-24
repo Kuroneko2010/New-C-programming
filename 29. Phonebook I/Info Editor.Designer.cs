@@ -50,6 +50,11 @@
             this.RelationshipErrorLabel = new System.Windows.Forms.Label();
             this.PhoneNumberInvalidError = new System.Windows.Forms.Label();
             this.RelationshipTextBox = new System.Windows.Forms.RichTextBox();
+            this.NameStorer = new System.Windows.Forms.Label();
+            this.PhoneNumberStorer = new System.Windows.Forms.Label();
+            this.AddressStorer = new System.Windows.Forms.Label();
+            this.RelationshipStorer = new System.Windows.Forms.Label();
+            this.GetBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // InfoEditorLabel
@@ -248,7 +253,7 @@
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(198, 53);
             this.EditButton.TabIndex = 38;
-            this.EditButton.Text = "Edit/Save";
+            this.EditButton.Text = "EDIT/SAVE";
             this.EditButton.UseVisualStyleBackColor = false;
             this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
@@ -287,12 +292,69 @@
             this.RelationshipTextBox.Text = "";
             this.RelationshipTextBox.Click += new System.EventHandler(this.RelationshipTextBox_Click);
             // 
+            // NameStorer
+            // 
+            this.NameStorer.AutoSize = true;
+            this.NameStorer.Location = new System.Drawing.Point(585, 9);
+            this.NameStorer.Name = "NameStorer";
+            this.NameStorer.Size = new System.Drawing.Size(61, 20);
+            this.NameStorer.TabIndex = 45;
+            this.NameStorer.Text = "(Name)";
+            this.NameStorer.Visible = false;
+            // 
+            // PhoneNumberStorer
+            // 
+            this.PhoneNumberStorer.AutoSize = true;
+            this.PhoneNumberStorer.Location = new System.Drawing.Point(525, 29);
+            this.PhoneNumberStorer.Name = "PhoneNumberStorer";
+            this.PhoneNumberStorer.Size = new System.Drawing.Size(121, 20);
+            this.PhoneNumberStorer.TabIndex = 46;
+            this.PhoneNumberStorer.Text = "(PhoneNumber)";
+            this.PhoneNumberStorer.Visible = false;
+            // 
+            // AddressStorer
+            // 
+            this.AddressStorer.AutoSize = true;
+            this.AddressStorer.Location = new System.Drawing.Point(568, 49);
+            this.AddressStorer.Name = "AddressStorer";
+            this.AddressStorer.Size = new System.Drawing.Size(78, 20);
+            this.AddressStorer.TabIndex = 47;
+            this.AddressStorer.Text = "(Address)";
+            this.AddressStorer.Visible = false;
+            // 
+            // RelationshipStorer
+            // 
+            this.RelationshipStorer.AutoSize = true;
+            this.RelationshipStorer.Location = new System.Drawing.Point(539, 69);
+            this.RelationshipStorer.Name = "RelationshipStorer";
+            this.RelationshipStorer.Size = new System.Drawing.Size(107, 20);
+            this.RelationshipStorer.TabIndex = 48;
+            this.RelationshipStorer.Text = "(Relationship)";
+            this.RelationshipStorer.Visible = false;
+            // 
+            // GetBackButton
+            // 
+            this.GetBackButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.GetBackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GetBackButton.Image = global::_29.Phonebook_I.Properties.Resources.z5427140306514_d3620e70880715a244df01848bce1dd4;
+            this.GetBackButton.Location = new System.Drawing.Point(589, 22);
+            this.GetBackButton.Name = "GetBackButton";
+            this.GetBackButton.Size = new System.Drawing.Size(44, 44);
+            this.GetBackButton.TabIndex = 49;
+            this.GetBackButton.UseVisualStyleBackColor = false;
+            this.GetBackButton.Click += new System.EventHandler(this.GetBackButton_Click);
+            // 
             // Info_Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(658, 594);
+            this.Controls.Add(this.GetBackButton);
+            this.Controls.Add(this.RelationshipStorer);
+            this.Controls.Add(this.AddressStorer);
+            this.Controls.Add(this.PhoneNumberStorer);
+            this.Controls.Add(this.NameStorer);
             this.Controls.Add(this.RelationshipTextBox);
             this.Controls.Add(this.PhoneNumberInvalidError);
             this.Controls.Add(this.RelationshipErrorLabel);
@@ -347,5 +409,10 @@
         private System.Windows.Forms.Label RelationshipErrorLabel;
         private System.Windows.Forms.Label PhoneNumberInvalidError;
         private System.Windows.Forms.RichTextBox RelationshipTextBox;
+        private System.Windows.Forms.Label NameStorer;
+        private System.Windows.Forms.Label PhoneNumberStorer;
+        private System.Windows.Forms.Label AddressStorer;
+        private System.Windows.Forms.Label RelationshipStorer;
+        private System.Windows.Forms.Button GetBackButton;
     }
 }

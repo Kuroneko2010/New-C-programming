@@ -10,22 +10,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using static _29.Phonebook_I.User_Interface;
+
 
 namespace _29.Phonebook_I
 {
     public partial class Profile_Viewer : Form
     {
-        private User_Interface parentForm;
-        public Profile_Viewer(Info profile, User_Interface parent)
+        public Profile_Viewer(Info profile)
         {
             InitializeComponent();
-            parentForm = parent;
             PhoneNumberStorerLabel.Text = profile.PhoneNumber;
-            NameLabel.Text = profile.Name;
-            PhoneNumberLabel.Text = profile.PhoneNumber;
-            AddressLabel.Text = profile.Address;
-            RelationshipLabel.Text = profile.Relationship;
+            DisplayViewInfo(profile);
         }
 
         public class Info
@@ -34,6 +29,14 @@ namespace _29.Phonebook_I
             public string PhoneNumber { get; set; }
             public string Address { get; set; }
             public string Relationship { get; set; }
+        }
+
+        public void DisplayViewInfo(Info profile)
+        {
+            NameLabel.Text = profile.Name;
+            PhoneNumberLabel.Text = profile.PhoneNumber;
+            AddressLabel.Text = profile.Address;
+            RelationshipLabel.Text = profile.Relationship;
         }
 
         private void Profile_Viewer_Load(object sender, EventArgs e)
@@ -134,7 +137,7 @@ namespace _29.Phonebook_I
                     }
                 }
             }
-            information.RemoveAll(info => info.PhoneNumber == phoneNumber);
+            
             try
             {
                 var sortedInfoList = information.OrderBy(info => info.Name).ToList();
@@ -148,7 +151,13 @@ namespace _29.Phonebook_I
             {
                 MessageBox.Show("Error found: " + ex.Message);
             }
-            Info_Editor editor = new Info_Editor();
+            Info_Editor editor = new Info_Editor(new Info_Editor.Info
+            {
+                Name = NameLabel.Text,
+                PhoneNumber = PhoneNumberLabel.Text,
+                Address = AddressLabel.Text,
+                Relationship = RelationshipLabel.Text,
+            },this);
             editor.Show();                      
         }
     }

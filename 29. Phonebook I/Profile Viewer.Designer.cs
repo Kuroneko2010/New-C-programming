@@ -153,7 +153,7 @@
             this.GetBackButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.GetBackButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GetBackButton.Image = global::_29.Phonebook_I.Properties.Resources.z5427140306514_d3620e70880715a244df01848bce1dd4;
-            this.GetBackButton.Location = new System.Drawing.Point(39, 16);
+            this.GetBackButton.Location = new System.Drawing.Point(670, 22);
             this.GetBackButton.Name = "GetBackButton";
             this.GetBackButton.Size = new System.Drawing.Size(44, 44);
             this.GetBackButton.TabIndex = 0;

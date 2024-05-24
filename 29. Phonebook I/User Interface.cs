@@ -106,7 +106,7 @@ namespace _29.Phonebook_I
                 PhoneNumber = profileInfo.PhoneNumber,
                 Address = profileInfo.Address,
                 Relationship = profileInfo.Relationship
-            }, this);
+            });
             profileViewer.Show();
             parentForm.Hide();
         }
@@ -137,7 +137,7 @@ namespace _29.Phonebook_I
                 PhoneNumber = profileInfo.PhoneNumber,
                 Address = profileInfo.Address,
                 Relationship = profileInfo.Relationship
-            }, this);
+            });
             profileViewer.Show();
             parentForm.Hide();
         }

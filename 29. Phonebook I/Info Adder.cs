@@ -267,6 +267,10 @@ namespace _29.Phonebook_I
             }
             if(otherBlue) 
             {
+                if (RelationshipTextBox.Text.LastIndexOf("Please choose a relationship") != -1)
+                {
+                    return "Not chosen";
+                }
                 return RelationshipTextBox.Text;
             }
             return "Not chosen";
@@ -290,6 +294,12 @@ namespace _29.Phonebook_I
             label9.Visible = false;
             if(string.IsNullOrEmpty(RelationshipTextBox.Text))
             {
+                RelationshipTextBox.AppendText("Please choose a relationship");
+                RelationshipTextBox.ForeColor = Color.Red;
+            }
+            if(RelationshipTextBox.Text.LastIndexOf("User's relationship here") != -1)
+            {
+                RelationshipTextBox.Text = RelationshipTextBox.Text.Remove(RelationshipTextBox.Text.LastIndexOf("User's relationship here"));
                 RelationshipTextBox.AppendText("Please choose a relationship");
                 RelationshipTextBox.ForeColor = Color.Red;
             }
@@ -339,9 +349,18 @@ namespace _29.Phonebook_I
                     PhoneNumberTextBox.Text = "";
                 }
 
-                if(!IsValidRelationship(RelationshipChoice()))
+                if (RelationshipTextBox.Text.LastIndexOf("Please choose a relationship") != -1)
+                {
+                    label8.Visible = false;
+                }
+
+                if (!IsValidRelationship(RelationshipChoice()))
                 {
                     label8.Visible = true;
+                    if (RelationshipTextBox.Text.LastIndexOf("Please choose a relationship") != -1)
+                    {
+                        label8.Visible = false;
+                    }
                 }
             }
         }
